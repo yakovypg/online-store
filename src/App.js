@@ -128,8 +128,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Navigate to='/store' />} />
             <Route path='/online-store' element={<Navigate to='/store' />} />
-            <Route path='/store' element={<OverviewMenu headphones={headphones} />} />
-            <Route path='/store/cart' element={<CartMenu headphones={headphones} />} />
+            <Route path='/online-store' element={<OverviewMenu headphones={headphones} />} />
+            <Route path='/online-store/cart' element={<CartMenu headphones={headphones} />} />
           </Routes>
         </div>
         <BottomBar />

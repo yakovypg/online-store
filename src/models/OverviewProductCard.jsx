@@ -19,7 +19,7 @@ export default function OverviewProductCard(props) {
     <div className='productCard'>
       <img
         className='overviewProductImage'
-        src={`/online-shop/images/headphones/headphone-${props.image}.jpg`}
+        src={`/online-store/images/headphones/headphone-${props.image}.jpg`}
         alt='headphone'
       />
       <div className='productInfoContainer'>
@@ -32,7 +32,7 @@ export default function OverviewProductCard(props) {
         </div>
         <div className='productInfo'>
           <span>
-            <img className='ratingImage' src='./online-shop/images/icons/star.png' alt='star' />
+            <img className='ratingImage' src='/online-store/images/icons/star.png' alt='star' />
             <span>{props.rating}</span>
           </span>
           <div className='productBuyLabel' onClick={onBuyClick}>
