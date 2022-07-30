@@ -1,0 +1,49 @@
+.cartTitle {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.cartContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cartTotals {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 1rem;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.totalMoneyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.totalMoney {
+  font-weight: 600;
+  padding: 15px 0px 15px 0px;
+}
+
+.purchases {
+  margin-right: 1rem;
+}
+
+.makeOrder {
+  height: 100%;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  background-color: black;
+}

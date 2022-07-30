@@ -1,0 +1,53 @@
+.productCard {
+  width: 15rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.overviewProductImage {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.ratingImage {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.productInfoContainer {
+  width: 14rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.productInfo {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productTitle {
+  font-weight: 450;
+}
+
+.productPrice {
+  color: #ffad52;
+  font-weight: 500;
+}
+
+.productOldPrice {
+  text-decoration: line-through;
+}
+
+.productBuyLabel {
+  cursor: pointer;
+  font-weight: 450;
+}

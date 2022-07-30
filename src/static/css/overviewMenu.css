@@ -1,0 +1,11 @@
+.headphoneTitle {
+  margin: 1rem;
+  color: #838383;
+}
+
+.headphoneList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}

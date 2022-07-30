@@ -1,0 +1,61 @@
+.card {
+  width: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.cardData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-weight: 500;
+}
+
+.cardPrice {
+  color: #838383;
+}
+
+.cardTotalPrice {
+  margin: auto 0;
+  text-align: center;
+}
+
+.cardCounter {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardCounterValue {
+  margin: auto 15px;
+  text-align: center;
+}
+
+.cardImage {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem 0;
+}
+
+.purchaseProductImage {
+  width: 10rem;
+  height: 10rem;
+  padding: 50px 0px;
+  margin: 0;
+}
