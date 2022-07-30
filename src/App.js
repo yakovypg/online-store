@@ -72,7 +72,7 @@ const headphones = [
     image: 5,
     type: 'wireless',
     title: 'GERLAX GH-04',
-    price: 6627,
+    price: 6527,
     rating: 4.7,
   },
   {
@@ -85,11 +85,10 @@ const headphones = [
   },
 ];
 
-let refreshCount;
-let setRefreshCount;
+let setRefreshStatus;
 
 export function refreshLayout() {
-  setRefreshCount(refreshCount + 1);
+  setRefreshStatus(0);
 }
 
 export function updateCartPresenter() {
@@ -109,10 +108,8 @@ export function getPurchasedProductsCount() {
 }
 
 function App() {
-  const [refreshValue, setRefreshValue] = useState(0);
-
-  refreshCount = refreshValue;
-  setRefreshCount = setRefreshValue;
+  const [_, setRefreshStatusValue] = useState(0);
+  setRefreshStatus = setRefreshStatusValue;
 
   for (const headphone of headphones) {
     sessionStorage.setItem(headphone.id, 0);
