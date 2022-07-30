@@ -25,7 +25,7 @@ export default function BottomBar() {
         <div className='languagesColumn'>
           <img
             className='internetImage'
-            src='./online-shop/images/icons/internet.png'
+            src='/online-shop/images/icons/internet.png'
             alt='earth'
           />
           <span className='languagesColumnSelectedItem'>Рус</span>
@@ -33,15 +33,15 @@ export default function BottomBar() {
         </div>
       </div>
       <div className='contactsColumn'>
-        <img className='contactsColumnItem' src='./online-shop/images/icons/vk.png' alt='vk' />
+        <img className='contactsColumnItem' src='/online-shop/images/icons/vk.png' alt='vk' />
         <img
           className='contactsColumnItem'
-          src='./online-shop/images/icons/telegram.png'
+          src='/online-shop/images/icons/telegram.png'
           alt='telegram'
         />
         <img
           className='contactsColumnItem'
-          src='./online-shop/images/icons/whatsapp.png'
+          src='/online-shop/images/icons/whatsapp.png'
           alt='whatsApp'
         />
       </div>

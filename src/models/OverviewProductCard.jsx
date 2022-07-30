@@ -19,7 +19,7 @@ export default function OverviewProductCard(props) {
     <div className='productCard'>
       <img
         className='overviewProductImage'
-        src={`./online-shop/images/headphones/headphone-${props.image}.jpg`}
+        src={`/online-shop/images/headphones/headphone-${props.image}.jpg`}
         alt='headphone'
       />
       <div className='productInfoContainer'>

@@ -11,11 +11,11 @@ export default function TopBar(props) {
       </NavLink>
       <div className='headerMenu'>
         <NavLink className='headerImageContainer' to='/store/likes'>
-          <img className='headerImage' src='./online-shop/images/icons/like.png' alt='like' />
+          <img className='headerImage' src='/online-shop/images/icons/like.png' alt='like' />
           <div className='headerCounterImage'>{props.likesCount}</div>
         </NavLink>
         <NavLink className='headerImageContainer' to='/store/cart'>
-          <img className='headerImage' src='./online-shop/images/icons/cart.png' alt='cart' />
+          <img className='headerImage' src='/online-shop/images/icons/cart.png' alt='cart' />
           <div className='headerCounterImage'>{props.purchasedProductsCount}</div>
         </NavLink>
       </div>
