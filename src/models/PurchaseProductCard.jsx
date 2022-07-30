@@ -33,7 +33,7 @@ export default function CartMenu(props) {
       <div className='cardData'>
         <img
           className='purchaseProductImage'
-          src={`/images/headphones/headphone-${headphone.image}.jpg`}
+          src={`./online-shop/images/headphones/headphone-${headphone.image}.jpg`}
           alt='headphone'
         />
         <div className='cardInfo'>
@@ -42,7 +42,7 @@ export default function CartMenu(props) {
         </div>
         <img
           className='cardImage'
-          src='/images/icons/delete.png'
+          src='./online-shop/images/icons/delete.png'
           alt='delete'
           onClick={onDeleteClick}
         />
@@ -51,14 +51,14 @@ export default function CartMenu(props) {
         <div className='cardCounter'>
           <img
             className='cardImage'
-            src='/images/icons/minus.png'
+            src='./online-shop/images/icons/minus.png'
             alt='minus'
             onClick={onMinusClick}
           />
           <div className='cardCounterValue'>{Number(sessionStorage.getItem(id))}</div>
           <img
             className='cardImage'
-            src='/images/icons/plus.png'
+            src='./online-shop/images/icons/plus.png'
             alt='plus'
             onClick={onPlusClick}
           />
