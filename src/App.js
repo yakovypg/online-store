@@ -94,8 +94,8 @@ export function refreshLayout() {
 
 export function updateCartPresenter() {
   const count = getPurchasedProductsCount();
-  document.getElementById('header').setAttribute('purchasedProductsCount', count);    
-  
+  document.getElementById('header').setAttribute('purchasedProductsCount', count);
+
   refreshLayout();
 }
 
@@ -105,21 +105,21 @@ export function loadPurchasedProductCount(id) {
 }
 
 export function getPurchasedProductsCount() {
-  return headphones.reduce((prev, curr) => prev += loadPurchasedProductCount(curr.id), 0);
+  return headphones.reduce((prev, curr) => (prev += loadPurchasedProductCount(curr.id)), 0);
 }
 
 function App() {
   const [refreshValue, setRefreshValue] = useState(0);
-  
+
   refreshCount = refreshValue;
   setRefreshCount = setRefreshValue;
-  
+
   for (const headphone of headphones) {
     sessionStorage.setItem(headphone.id, 0);
   }
 
   const purchasedProductsCount = getPurchasedProductsCount();
-  
+
   return (
     <BrowserRouter>
       <div className='App'>

@@ -35,7 +35,9 @@ export default function OverviewProductCard(props) {
             <img className='ratingImage' src='/images/icons/star.png' alt='star' />
             <span>{props.rating}</span>
           </span>
-          <div className='productBuyLabel' onClick={onBuyClick}>Купить</div>
+          <div className='productBuyLabel' onClick={onBuyClick}>
+            Купить
+          </div>
         </div>
       </div>
     </div>

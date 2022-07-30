@@ -18,7 +18,7 @@ export default function CartMenu(props) {
 
   function onPlusClick() {
     const count = Number(sessionStorage.getItem(id));
-    
+
     sessionStorage.setItem(id, count + 1);
     updateCartPresenter();
   }
