@@ -85,10 +85,11 @@ const headphones = [
   },
 ];
 
+let refreshStatus;
 let setRefreshStatus;
 
 export function refreshLayout() {
-  setRefreshStatus(0);
+  setRefreshStatus(refreshStatus + 1);
 }
 
 export function updateCartPresenter() {
@@ -108,7 +109,9 @@ export function getPurchasedProductsCount() {
 }
 
 function App() {
-  const [_, setRefreshStatusValue] = useState(0);
+  const [refreshStatusValue, setRefreshStatusValue] = useState(0);
+
+  refreshStatus = refreshStatusValue;
   setRefreshStatus = setRefreshStatusValue;
 
   for (const headphone of headphones) {
