@@ -4,8 +4,8 @@ import React from 'react';
 import { updateCartPresenter } from '../App';
 
 export default function CartMenu(props) {
-  const headphone = props.headphone;
-  const id = `product-${headphone.id}`;
+  const id = `product-${props.id}`;
+  const cardCounterValue = Number(sessionStorage.getItem(id));
 
   function onMinusClick() {
     const count = Number(sessionStorage.getItem(id));
@@ -33,12 +33,12 @@ export default function CartMenu(props) {
       <div className='cardData'>
         <img
           className='purchaseProductImage'
-          src={`/online-store/images/headphones/headphone-${headphone.image}.jpg`}
+          src={`/online-store/images/headphones/headphone-${props.image}.jpg`}
           alt='headphone'
         />
         <div className='cardInfo'>
-          <div className='cardTitle'>{headphone.title}</div>
-          <div className='cardPrice'>{headphone.price} ₽</div>
+          <div className='cardTitle'>{props.title}</div>
+          <div className='cardPrice'>{props.price} ₽</div>
         </div>
         <img
           className='cardImage'
@@ -55,7 +55,7 @@ export default function CartMenu(props) {
             alt='minus'
             onClick={onMinusClick}
           />
-          <div className='cardCounterValue'>{Number(sessionStorage.getItem(id))}</div>
+          <div className='cardCounterValue'>{cardCounterValue}</div>
           <img
             className='cardImage'
             src='/online-store/images/icons/plus.png'
@@ -63,9 +63,7 @@ export default function CartMenu(props) {
             onClick={onPlusClick}
           />
         </div>
-        <div className='cardTotalPrice'>
-          {Number(sessionStorage.getItem(id)) * headphone.price} ₽
-        </div>
+        <div className='cardTotalPrice'>{cardCounterValue * props.price} ₽</div>
       </div>
     </div>
   );

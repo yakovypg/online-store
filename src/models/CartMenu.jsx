@@ -9,7 +9,14 @@ export default function CartMenu(props) {
   console.log(props);
   const headphonesCards = props.headphones
     .filter(t => loadPurchasedProductCount(t.id) > 0)
-    .map(t => <PurchaseProductCard headphone={t} />);
+    .map(t =>
+      <PurchaseProductCard
+        id={t.id}
+        title={t.title}
+        image={t.image}
+        price={t.price}
+      />
+    );
 
   const totalPrice = props.headphones.reduce(
     (prev, curr) => (prev += curr.price * loadPurchasedProductCount(curr.id)),
