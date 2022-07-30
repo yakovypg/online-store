@@ -118,12 +118,10 @@ function App() {
     sessionStorage.setItem(headphone.id, 0);
   }
 
-  const purchasedProductsCount = getPurchasedProductsCount();
-
   return (
     <BrowserRouter>
       <div className='App'>
-        <TopBar likesCount={2} purchasedProductsCount={purchasedProductsCount} />
+        <TopBar likesCount={2} purchasedProductsCount={getPurchasedProductsCount()} />
         <div className='wrapper'>
           <Routes>
             <Route path='/online-store' element={<OverviewMenu headphones={headphones} />} />
