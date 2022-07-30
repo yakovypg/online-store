@@ -17,7 +17,7 @@ export default function CartMenu(props) {
   );
 
   return (
-    <div id='main_data'>
+    <div>
       <div className='cartTitle'>Корзина</div>
       <div className='cartContent'>
         <div className='purchases'>{headphonesCards}</div>

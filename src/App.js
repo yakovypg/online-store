@@ -124,8 +124,8 @@ function App() {
         <TopBar likesCount={2} purchasedProductsCount={getPurchasedProductsCount()} />
         <div className='wrapper'>
           <Routes>
-            <Route path='/online-store' element={<OverviewMenu headphones={headphones} />} />
-            <Route path='/online-store/cart' element={<CartMenu headphones={headphones} />} />
+            <Route path='/online-store/' element={<OverviewMenu headphones={headphones} />} />
+            <Route path='/online-store/cart/' element={<CartMenu headphones={headphones} />} />
           </Routes>
         </div>
         <BottomBar />

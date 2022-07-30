@@ -8,18 +8,18 @@ export default function BottomBar() {
     <footer>
       <div className='bottomBarTitle'>QPICK</div>
       <div className='linksColumn'>
-        <NavLink className='linksColumnItem' to='/online-store/likes'>
+        <NavLink className='linksColumnItem' to='/online-store/likes/'>
           Избранное
         </NavLink>
-        <NavLink className='linksColumnItem' to='/online-store/cart'>
+        <NavLink className='linksColumnItem' to='/online-store/cart/'>
           Корзина
         </NavLink>
-        <NavLink className='linksColumnItem' to='/online-store/contacts'>
+        <NavLink className='linksColumnItem' to='/online-store/contacts/'>
           Контакты
         </NavLink>
       </div>
       <div className='optionsColumn'>
-        <NavLink className='linksColumnItem' to='/online-store/terms'>
+        <NavLink className='linksColumnItem' to='/online-store/terms/'>
           Условия сервиса
         </NavLink>
         <div className='languagesColumn'>
